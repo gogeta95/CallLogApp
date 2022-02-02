@@ -92,3 +92,4 @@ Shows history of calls since server was started
 ## TODO:
 * Check whether device is connected to Wifi before starting server
 * Update name in old records if number was saved later/updated on device.
+* There's a bug that service gets restarted if app is minimised and relaunched.
