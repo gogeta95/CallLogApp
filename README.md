@@ -20,7 +20,7 @@ Import in Android studio and run the app.
 The server root URL is shown on the device after running the app.
 
 ### Root:
-Endpoint: `/`
+Endpoint: GET `/`
 
 Response:
 ```json
@@ -43,7 +43,9 @@ Response:
 
 ### Status:
 Shows status of currently ongoing call
-Endpoint: `/status`
+
+Endpoint: GET `/status`
+
 Response:
 ```json
 {
@@ -61,6 +63,10 @@ Response:
 
 ### Log:
 Shows history of calls since server was started
+
+Endpoint: GET `/log`
+
+Response:
 ```json
 [
   {
