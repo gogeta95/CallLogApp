@@ -19,8 +19,9 @@ Import in Android studio and run the app.
 
 The server root URL is shown on the device after running the app.
 
-#### Root:
+### Root:
 Endpoint: `/`
+
 Response:
 ```json
 {
@@ -38,7 +39,9 @@ Response:
 }
 ```
 `start`: when server was started
-#### Status:
+
+
+### Status:
 Shows status of currently ongoing call
 Endpoint: `/status`
 Response:
@@ -50,10 +53,13 @@ Response:
 }
 ```
 `ongoing`: mandatory, whether a call is running or not
+
 `number`: number with which call is ongoing. **optional**, missing if ongoing is false
+
 `name`: name of the caller as saved on device. **optional**, missing if ongoing is false or number is not saved on device
 
-#### Log:
+
+### Log:
 Shows history of calls since server was started
 ```json
 [
@@ -73,10 +79,16 @@ Shows history of calls since server was started
 ]
 ```
 `beginning`: start time of the call (in device local time)
+
 `duration`: duration of the call
+
 `name`: name of the caller as saved on device. **optional**, missing if number is not saved on device at the `beginning` of call
+
 `number`: number with which call is ongoing.
+
 `timesQueried`: how many times data on this call was requested while ongoing using `/status`
+
+
 ## TODO:
 * Check whether device is connected to Wifi before starting server
 * Update name in old records if number was saved later/updated on device.
